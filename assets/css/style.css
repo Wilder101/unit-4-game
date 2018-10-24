@@ -4,3 +4,17 @@ body {
     color: white;
     background-image: url("../images/star-wars-wallpaper.jpg");
 }
+
+img {
+    padding: 10px;
+    width: 200px;
+    /* display: inline-block; */
+}
+
+/* div {
+    display: inline-block;
+} */
+
+/* .img-fighter {
+    display: inline-block;
+} */
