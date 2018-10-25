@@ -21,7 +21,15 @@ img {
 .char-name {
     position: absolute;
     top: -52px;
-    left: 48px;
+    left: 28px;
+    font-size: 12px;
+    color: gray;
+}
+
+.health-points {
+    position: absolute;
+    top: 56px;
+    left: 27px;
     font-size: 12px;
     color: gray;
 }
