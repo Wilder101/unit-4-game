@@ -5,35 +5,23 @@ body {
     background-image: url("../images/star-wars-wallpaper.jpg");
 }
 
-/* h1 {
-    float: right;
-} */
-
 img {
     padding: 25px;
     background-color: white;
     width: 180px;
-
     border: 3px;
     border-color: red;
     border-style: solid;
-
-    /* margin: 0px; */
-
-
-    /* display: inline-block; */
 }
 
 .img-container {
-    /* border: 3px;
-    border-color: red;
-    border-style: solid; */
+    position: relative;
 }
 
-/* div {
-    display: inline-block;
-} */
-
-/* .img-fighter {
-    display: inline-block;
-} */
+.char-name {
+    position: absolute;
+    top: -52px;
+    left: 48px;
+    font-size: 12px;
+    color: gray;
+}
