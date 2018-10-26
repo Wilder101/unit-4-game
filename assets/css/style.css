@@ -1,40 +1,88 @@
-/* unit-4-game -- Star Wars Game by WBM, 10/23/18, CSS file */
+/* unit-4-game -- CrystalsCollector Game by WBM, 10/26/18, CSS file */
 
 body {
+    color: black;
+    /* background-image: url("../images/star-wars-wallpaper.jpg"); */
+}
+
+.title {
+    background-color: brown;
     color: white;
-    background-image: url("../images/star-wars-wallpaper.jpg");
+    font-size: 40px;
+    padding: 20px 5px;
+    margin: 20px;
+    /* margin-top: 50px; */
+}
+
+.instructions {
+    background-color: tan;
+    color: brown;
+    font-size: 20px;
+    padding: 20px 5px;
+    margin: 20px;
+    width: 50%;
+}
+
+.random-number-box {
+    float: left;
+    background-color: green;
+    color: black;
+    font-size: 20px;
+    padding: 20px 5px;
+    margin: 0px 10px 10px 20px;
+    width: 15%;
+    height: 170px;
+}
+
+.random-number {
+    color: black;
+    font-size: 40px;
+}
+.wins-losses {
+    float: left;
+    background-color: lightblue;
+    color: black;
+    font-size: 20px;
+    padding: 20px 5px;
+    margin: 0px 10px 10px 20px;
+    width: 15%;
+    height: 170px;
+}
+
+.gem-button {
+    clear: left;
+    /* background-color: white;
+    padding: 20px 5px;
+    margin: 0px 10px 10px 20px; */
+}
+
+.gem {
+    float: left;
+    background-color: wheat;
+    padding: 20px 5px;
+    margin: 0px 10px 10px 20px;
+}
+
+.score {
+    clear: left;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+    padding: 20px 5px;
+    margin: 0px 10px 10px 20px;
+    width: 15%;
+    height: 190px;
+}
+
+.score-report {
+    font-size: 40px;
 }
 
 img {
     padding: 25px;
-    background-color: white;
+    /* background-color: white;
     width: 180px;
     border: 3px;
     border-color: red;
-    border-style: solid;
-}
-
-.character-button {
-
-}
-
-.img-container {
-    position: relative;
-}
-
-.char-name {
-    position: absolute;
-    /* position: relative; */
-    top: -52px;
-    left: 28px;
-    font-size: 12px;
-    color: gray;
-}
-
-.health-points {
-    position: absolute;
-    top: 56px;
-    left: 27px;
-    font-size: 12px;
-    color: gray;
+    border-style: solid; */
 }
