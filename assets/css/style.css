@@ -14,12 +14,17 @@ img {
     border-style: solid;
 }
 
+.character-button {
+
+}
+
 .img-container {
     position: relative;
 }
 
 .char-name {
     position: absolute;
+    /* position: relative; */
     top: -52px;
     left: 28px;
     font-size: 12px;
