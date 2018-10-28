@@ -20,7 +20,7 @@ body {
     font-size: 20px;
     padding: 20px 5px;
     margin: 20px;
-    width: 50%;
+    width: 600px;
 }
 
 .random-number-box {
@@ -30,8 +30,8 @@ body {
     font-size: 20px;
     padding: 20px 5px;
     margin: 0px 10px 10px 20px;
-    width: 15%;
-    height: 170px;
+    width: 200px;
+    height: 150px;
 }
 
 .random-number {
@@ -45,22 +45,35 @@ body {
     font-size: 20px;
     padding: 20px 5px;
     margin: 0px 10px 10px 20px;
-    width: 15%;
-    height: 170px;
+    width: 200px;
+    height: 150px;
 }
 
 .gem-button {
     clear: left;
-    /* background-color: white;
-    padding: 20px 5px;
-    margin: 0px 10px 10px 20px; */
+    /* /* background-color: white; */
+    padding: 5px 5px;
+    /* margin: 0px 10px 10px 20px;  */
 }
 
 .gem {
-    float: left;
-    background-color: wheat;
-    padding: 20px 5px;
-    margin: 0px 10px 10px 20px;
+    background-size: 100px 100px;
+    height: 100px;  
+    width: 100px;
+    margin: 0px 0px 0px 15px;
+}
+
+#gem-orange {
+    background-image: url("../images/orange-crystal.jpg");
+}
+#gem-pink {
+    background-image: url("../images/pink-crystal.jpg");
+}
+#gem-purple {
+    background-image: url("../images/purple-crystal.jpg");
+}
+#gem-yellow {
+    background-image: url("../images/yellow-crystal.jpg");
 }
 
 .score {
@@ -69,9 +82,9 @@ body {
     color: white;
     font-size: 20px;
     padding: 20px 5px;
-    margin: 0px 10px 10px 20px;
-    width: 15%;
-    height: 190px;
+    margin: 5px 10px 10px 20px;
+    width: 200px;
+    height: 150px;
 }
 
 .score-report {
