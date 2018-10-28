@@ -22,7 +22,6 @@ $(document).ready(function() {
         // Set random hidden values of all gems
         for (let i = 0; i < gems.length; i++) {
             gems[i].randomHiddenValue = setRandomHiddenValue();
-            console.log(gems[i].name + " gets " + gems[i].randomHiddenValue);       // TESTS WELL!!!!!!!
         }
 
         // Set up the random number to be guessed and update UI
@@ -53,26 +52,6 @@ $(document).ready(function() {
         return random;
     };
 
-    // // TESTING!!!
-    // for (let i = 0; i < 1000000; i++) {
-    //     let temp = setRandomNumToGuess();
-    //     if (temp == 19) {
-    //         console.log(temp + " is 19");
-    //     }
-    //     else if (temp == 119) {
-    //         console.log(temp + " is 119");
-    //     }
-    //     else if (temp == 120) {
-    //         console.log(temp + " is 120");
-    //     }
-    //     else if (temp < 19) {
-    //         console.log(temp + " is less than 19");
-    //     }
-    //     else if (temp > 120) {
-    //         console.log(temp + " is greater than 120");
-    //     }
-    // }
-
     // On page load
     initializeGame();
 
@@ -101,12 +80,12 @@ $(document).ready(function() {
     // Check for a win or loss situation, driven by click events
     function checkWinOrLoss() {
         if (totalScore === randomNumToGuess) {        // We have a winner
-        wins++;
-        initializeGame()
+            wins++;
+            initializeGame()
         }
         else if (totalScore > randomNumToGuess) {     // We have a loser
-        losses++;
-        initializeGame();
+            losses++;
+            initializeGame();
         }
         else {
             updateUI;

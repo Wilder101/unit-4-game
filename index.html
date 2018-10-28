@@ -10,7 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- favicon -->
-        <!-- <link rel="shortcut icon" href="assets/images/favicon.ico"> -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
 
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/reset.css"> 
@@ -21,50 +21,39 @@
         <title>CrystalsCollector Game</title>
     </head>
     <body>
-        <!-- <div class="container"> Bootstrap container -->
+        <br>
+        <heading class="title">CrystalsCollector Game</heading>
 
-            <br>
-            <heading class="title">CrystalsCollector Game</heading>
+        <div class="instructions">
+            <p>Instructions:</p>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four cystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the given random number. You lose the game if your total score goes above the given random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time the game starts, the game will change the values of each crystal.</p>
+        </div>
 
-            <div class="instructions">
-                <p>Instructions:</p>
-                <p>Here they are!</p>
-            </div>
+        <div class="random-number-box">
+            <p>Random number is:</p>
+            <p class="random-number"></p>
+        </div>
 
-            <div class="random-number-box">
-                <p>Random number is:</p>
-                <p class="random-number"></p>
-            </div>
+        <div class="wins-losses">
+            <p>Wins:   <span class="wins"></span></p>
+            <p>Losses: <span class="losses"></span></p>
+        </div>
 
-            <div class="wins-losses">
-                <p>Wins:   <span class="wins"></span></p>
-                <p>Losses: <span class="losses"></span></p>
-            </div>
+        <div class="gem-button">
+            <button id="gem-orange" class="gem"></button>
+            <button id="gem-pink"   class="gem"></button>
+            <button id="gem-purple" class="gem"></button>
+            <button id="gem-yellow" class="gem"></button>
+        </div>
 
-            <!-- <div class="gem-button">
-                <div class="gem">Gem</div>
-                <div class="gem">Gem</div>
-                <div class="gem">Gem</div>
-                <div class="gem">Gem</div>
-            </div> -->
-
-            <div class="gem-button">
-                <button id="gem-orange" class="gem"></button>
-                <button id="gem-pink"   class="gem"></button>
-                <button id="gem-purple" class="gem"></button>
-                <button id="gem-yellow" class="gem"></button>
-            </div>
-
-            <!-- <button id="close-CSS"></button> -->
-
-            <div class="score">
-                <p>Your total score is:</p>
-                <p class="score-report"></p>
-            </div>
-
-
-
-        <!-- </div> Bootstrap container -->
+        <div class="score">
+            <p>Your total score is:</p>
+            <p class="score-report"></p>
+        </div>
 
         <!-- Link to game.js -->
         <script type="text/javascript" src="assets/javascript/game.js"></script>

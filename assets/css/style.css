@@ -2,7 +2,7 @@
 
 body {
     color: black;
-    /* background-image: url("../images/star-wars-wallpaper.jpg"); */
+    background-image: url("../images/dimension.jpg");
 }
 
 .title {
@@ -11,15 +11,14 @@ body {
     font-size: 40px;
     padding: 20px 5px;
     margin: 20px;
-    /* margin-top: 50px; */
 }
 
 .instructions {
     background-color: tan;
     color: brown;
-    font-size: 20px;
-    padding: 20px 5px;
-    margin: 20px;
+    font-size: 14px;
+    padding: 20px 5px 10px 5px;
+    margin: 20px 10px 10px 20px;
     width: 600px;
 }
 
@@ -28,10 +27,10 @@ body {
     background-color: green;
     color: black;
     font-size: 20px;
-    padding: 20px 5px;
-    margin: 0px 10px 10px 20px;
+    padding: 5px 5px;
+    margin: 0px 5px 10px 20px;
     width: 200px;
-    height: 150px;
+    /* height: 150px; */
 }
 
 .random-number {
@@ -44,16 +43,14 @@ body {
     color: black;
     font-size: 20px;
     padding: 20px 5px;
-    margin: 0px 10px 10px 20px;
+    margin: 0px 10px 10px 5px;
     width: 200px;
-    height: 150px;
+    /* height: 150px; */
 }
 
 .gem-button {
     clear: left;
-    /* /* background-color: white; */
     padding: 5px 5px;
-    /* margin: 0px 10px 10px 20px;  */
 }
 
 .gem {
@@ -81,10 +78,10 @@ body {
     background-color: darkgreen;
     color: white;
     font-size: 20px;
-    padding: 20px 5px;
+    padding: 5px 5px;
     margin: 5px 10px 10px 20px;
     width: 200px;
-    height: 150px;
+    height: 120px;
 }
 
 .score-report {
