@@ -18,41 +18,99 @@ $(document).ready(function() {
 
     // Set up a fresh game to play
     function initializeGame () {
+
         // Set random hidden values of all gems
         for (let i = 0; i < gems.length; i++) {
             gems[i].randomHiddenValue = setRandomHiddenValue();
+            console.log(gems[i].name + " gets " + gems[i].randomHiddenValue);       // TESTS WELL!!!!!!!
         }
 
-        // Set up the random number to be guessed
+        // Set up the random number to be guessed and update UI
         randomNumToGuess = setRandomNumToGuess();
-        
-        // Update variable
+        $(".random-number").text(randomNumToGuess);
+
+        // Display wins, losses, and total score (set to zero) and update UI
         totalScore = 0;
-
-
-        // Update UI...
+        updateUI();
     };
+
+    // Display wins, losses, and total score
+    function updateUI () {
+        $(".wins").text(wins);
+        $(".losses").text(losses);
+        $(".score-report").text(totalScore);
+    }
 
     // Returns a random number between 1 - 12
     function setRandomHiddenValue() {
-        let random = 5;     // CHANGE TO MATH.FLOOR/MATH.RANDOM GENERATOR FOR 1 - 12 RESULT
+        let random = Math.floor(Math.random() * 12) + 1;    // Yields a number 1 to 12, inclusive
         return random;
     };
 
     // Returns a random number between 19 - 120
     function setRandomNumToGuess() {
-        let random = 40;    // CHANGE TO MATH.FLOOR/MATH.RANDOM GENERATOR FOR 19 - 120 RESULT
+        let random = Math.floor(Math.random() * 102) + 19;    // Yields a number 19 to 120, inclusive
         return random;
     };
 
+    // // TESTING!!!
+    // for (let i = 0; i < 1000000; i++) {
+    //     let temp = setRandomNumToGuess();
+    //     if (temp == 19) {
+    //         console.log(temp + " is 19");
+    //     }
+    //     else if (temp == 119) {
+    //         console.log(temp + " is 119");
+    //     }
+    //     else if (temp == 120) {
+    //         console.log(temp + " is 120");
+    //     }
+    //     else if (temp < 19) {
+    //         console.log(temp + " is less than 19");
+    //     }
+    //     else if (temp > 120) {
+    //         console.log(temp + " is greater than 120");
+    //     }
+    // }
 
     // On page load
-    randomNumToGuess = setRandomNumToGuess();
     initializeGame();
 
     // Events
+    $("#gem-orange").on("click", function() {
+    totalScore = totalScore + gems[0].randomHiddenValue;
+    updateUI();
+    checkWinOrLoss();
+    });
+    $("#gem-pink").on("click", function() {
+    totalScore = totalScore + gems[1].randomHiddenValue;
+    updateUI();
+    checkWinOrLoss();
+    });
+    $("#gem-purple").on("click", function() {
+    totalScore = totalScore + gems[2].randomHiddenValue;
+    updateUI();
+    checkWinOrLoss();
+    });
+    $("#gem-yellow").on("click", function() {
+    totalScore = totalScore + gems[3].randomHiddenValue;
+    updateUI();
+    checkWinOrLoss();
+    });
 
-
-
+    // Check for a win or loss situation, driven by click events
+    function checkWinOrLoss() {
+        if (totalScore === randomNumToGuess) {        // We have a winner
+        wins++;
+        initializeGame()
+        }
+        else if (totalScore > randomNumToGuess) {     // We have a loser
+        losses++;
+        initializeGame();
+        }
+        else {
+            updateUI;
+        }
+    };
 
 }); // End document.ready
